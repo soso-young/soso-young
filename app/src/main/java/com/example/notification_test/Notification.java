@@ -53,6 +53,8 @@ public class Notification extends ContextWrapper {
 
         return new NotificationCompat.Builder(getApplicationContext(), channelId)
                 .setContentText(message)
+                .setContentText(message)//message 띄우기
+                .setOngoing(true)   //알림 상당바에 계속 고정하기
                 .setSmallIcon(R.drawable.ic_launcher_background);
 
     }
